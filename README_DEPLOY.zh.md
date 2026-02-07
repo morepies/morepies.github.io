@@ -1,6 +1,6 @@
 ﻿# Flow PayPal 申请站点部署说明
 
-站点目录：`d:\AIGC\tools\flow-paypal-site`
+站点目录：`d:\\AIGC\\tools\\pandaflow-site`
 
 ## 1. 先改 1 个文件
 编辑 `config.js`，至少修改：
@@ -38,7 +38,7 @@
 - `assets/` 展示图片
 
 ## 6. 用 Git 命令发布（可重复更新）
-在 `flow-paypal-site` 目录运行：
+在 `pandaflow-site` 目录运行：
 
 ```powershell
 .\publish_example.ps1
@@ -52,3 +52,4 @@
 ```powershell
 .\publish_example.ps1 -RepoUrl "https://github.com/你的用户名/你的仓库.git"
 ```
+
