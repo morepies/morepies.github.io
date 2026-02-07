@@ -1,7 +1,7 @@
 ﻿window.SITE_CONFIG = {
-  brandName: "morepies Flow",
+  brandName: "PandaFlow",
   ownerName: "morepies",
-  contactEmail: "replace-with-your-email@example.com",
+  contactEmail: "morepiesai@gmail.com",
   supportUrl: "https://github.com/morepies",
   githubProfile: "https://github.com/morepies",
   productName: "Flow Input Panel",
