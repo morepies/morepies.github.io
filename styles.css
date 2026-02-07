@@ -113,6 +113,12 @@ a {
   flex-wrap: wrap;
 }
 
+.nav-tools {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .menu a {
   font-size: 0.88rem;
   color: var(--muted);
@@ -126,6 +132,40 @@ a {
   color: var(--ink);
   background: rgba(255, 255, 255, 0.72);
   border-color: var(--line);
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.lang-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 42px;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--muted);
+  border: 1px solid transparent;
+}
+
+.lang-link:hover {
+  color: var(--ink);
+}
+
+.lang-link.active {
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), #1b9b7f);
+  box-shadow: 0 6px 14px rgba(15, 125, 102, 0.24);
 }
 
 .hero {
@@ -550,6 +590,11 @@ footer {
   .menu a {
     padding: 7px 10px;
   }
+
+  .nav-tools {
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 680px) {
@@ -561,6 +606,8 @@ footer {
 
   .nav-inner {
     min-height: 64px;
+    flex-wrap: wrap;
+    padding: 8px 0;
   }
 
   .brand {

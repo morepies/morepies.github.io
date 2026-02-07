@@ -1,0 +1,211 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flow Plugin Service | morepies</title>
+  <meta name="description" content="Flow plugin and automation service showcase page for PayPal store URL submission." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index-en.html" data-config="brandName">morepies Flow</a>
+      <div class="nav-tools">
+        <nav class="menu">
+          <a href="#product">Product</a>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#policy">Policy</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="lang-switch" aria-label="Language">
+          <a class="lang-link" href="index.html">中文</a>
+          <a class="lang-link active" href="index-en.html">EN</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <article class="card hero-copy">
+        <span class="kicker">Flow Plugin Service</span>
+        <h1>Flow Automation Plugin and Technical Service</h1>
+        <p class="lead">
+          This site showcases the features, service model, and after-sales policy of
+          <span data-config="productName">Flow Input Panel</span>.
+          It can be used as a store/product URL for PayPal application review.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" data-config-mailto="contactEmail" href="mailto:morepiesai@gmail.com">Contact / Purchase</a>
+          <a class="btn btn-secondary" data-config-href="githubProfile" href="https://github.com/morepies" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+        <p id="setup-banner" class="notice">Please update `contactEmail` in `config.js` before submitting to PayPal.</p>
+      </article>
+
+      <aside class="card hero-side">
+        <div class="stat">
+          <strong>Service Owner</strong>
+          <span data-config="ownerName">morepies</span>
+        </div>
+        <div class="stat">
+          <strong>Service Region</strong>
+          <span data-config="location">Remote</span>
+        </div>
+        <div class="stat">
+          <strong>Starting Price</strong>
+          <span><span data-config="currency">USD</span> <span data-config="basePrice">19</span>+</span>
+        </div>
+        <div class="stat">
+          <strong>Last Updated</strong>
+          <span data-config="updatedAt">2026-02-07</span>
+        </div>
+      </aside>
+    </section>
+
+    <section id="product" class="card section">
+      <div class="section-head">
+        <h2>Product Overview</h2>
+        <p>Chrome extension for batch operations and download optimization in Flow workflows</p>
+      </div>
+      <p class="lead">
+        The Flow plugin focuses on input management, script queue processing,
+        auto download, and asset handling in generation workflows.
+      </p>
+      <p class="lead">
+        Note: This is an independent tool service and is not affiliated with Google or its brands.
+      </p>
+    </section>
+
+    <section id="features" class="card section">
+      <div class="section-head">
+        <h2>Core Features</h2>
+        <p>Suitable for creators, studios, and asset-heavy pipelines</p>
+      </div>
+      <div class="grid-3">
+        <article class="feature">
+          <h3>Script Queue</h3>
+          <p>Batch execution, progress tracking, and resume support to reduce repetitive work.</p>
+        </article>
+        <article class="feature">
+          <h3>Video Download Manager</h3>
+          <p>Auto download, naming strategy, retry logic, and duplicate filtering.</p>
+        </article>
+        <article class="feature">
+          <h3>Image Reference Mode</h3>
+          <p>Supports reference-image workflows and cleanup policies for different usage habits.</p>
+        </article>
+        <article class="feature">
+          <h3>Bilingual Interface</h3>
+          <p>Chinese/English interface support for multilingual collaboration.</p>
+        </article>
+        <article class="feature">
+          <h3>Parameter Control</h3>
+          <p>Aspect ratio, output count, model options, and download strategy control.</p>
+        </article>
+        <article class="feature">
+          <h3>Local Storage</h3>
+          <p>Configuration is stored locally in the browser to reduce external dependency.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="card section">
+      <div class="section-head">
+        <h2>UI Showcase</h2>
+        <p>Real Flow runtime screenshot (2026-02-07)</p>
+      </div>
+      <div class="gallery">
+        <figure class="shot">
+          <img src="assets/flow-latest-ui.png" alt="Flow plugin and Flow page integrated interface" />
+          <figcaption>Flow plugin operation panel and login status in a real generation session.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="pricing" class="card section">
+      <div class="section-head">
+        <h2>Service Pricing (Sample)</h2>
+        <p>Can be adjusted by requirements; final pricing is confirmed during order</p>
+      </div>
+      <div class="price-grid">
+        <article class="price">
+          <h3>Starter</h3>
+          <p class="amount">USD 19+</p>
+          <p>Basic setup guidance, parameter recommendations, and one remote Q&A session.</p>
+        </article>
+        <article class="price">
+          <h3>Advanced</h3>
+          <p class="amount">USD 49+</p>
+          <p>Includes script queue setup, naming strategy, and workflow optimization advice.</p>
+        </article>
+        <article class="price">
+          <h3>Custom</h3>
+          <p class="amount">USD 99+</p>
+          <p>Requirement-based custom delivery with support period and documentation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="policy" class="card section">
+      <div class="section-head">
+        <h2>Policy & Compliance</h2>
+        <p>These pages are usually reviewed in PayPal submissions</p>
+      </div>
+      <div class="link-grid">
+        <a class="link-item" href="privacy-en.html">
+          <strong>Privacy Policy</strong>
+          Data collection and processing details
+        </a>
+        <a class="link-item" href="terms-en.html">
+          <strong>Terms of Service</strong>
+          Service scope and responsibility boundaries
+        </a>
+        <a class="link-item" href="refund-en.html">
+          <strong>Refund Policy</strong>
+          Refund conditions for digital services
+        </a>
+        <a class="link-item" href="contact-en.html">
+          <strong>Contact & Support</strong>
+          Pre-sales and after-sales contact channels
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="card section">
+      <div class="section-head">
+        <h2>Contact Info</h2>
+        <p>Please ensure this info is valid before PayPal submission</p>
+      </div>
+      <div class="grid-3">
+        <article class="feature">
+          <h3>Contact Person</h3>
+          <p data-config="ownerName">morepies</p>
+        </article>
+        <article class="feature">
+          <h3>Email</h3>
+          <p><a data-config-mailto="contactEmail" href="mailto:morepiesai@gmail.com" data-config="contactEmail">morepiesai@gmail.com</a></p>
+        </article>
+        <article class="feature">
+          <h3>Public Profile</h3>
+          <p><a data-config-href="supportUrl" href="https://github.com/morepies" target="_blank" rel="noreferrer">GitHub / Support Entry</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span data-config="year"></span> <span data-config="brandName">morepies Flow</span></span>
+    <span>
+      <a href="privacy-en.html">Privacy</a> ·
+      <a href="terms-en.html">Terms</a> ·
+      <a href="refund-en.html">Refund</a> ·
+      <a href="contact-en.html">Contact</a>
+    </span>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
