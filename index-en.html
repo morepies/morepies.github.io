@@ -150,6 +150,14 @@
       </div>
       <div class="compare-table-wrap">
         <table class="compare-table" aria-label="Plan comparison table">
+          <colgroup>
+            <col class="metric-col" />
+            <col class="plan-col" />
+            <col class="plan-col" />
+            <col class="plan-col" />
+            <col class="plan-col" />
+            <col class="plan-col" />
+          </colgroup>
           <thead>
             <tr>
               <th>Metric</th>
@@ -162,7 +170,7 @@
           </thead>
           <tbody>
             <tr>
-              <th>Video Quality</th>
+              <th>Max Download Video Resolution</th>
               <td>720p</td>
               <td>1080p</td>
               <td>4K</td>
@@ -170,7 +178,7 @@
               <td>4K</td>
             </tr>
             <tr>
-              <th>Image Quality</th>
+              <th>Max Download Image Resolution</th>
               <td>Min 1K</td>
               <td>2K</td>
               <td>4K</td>
@@ -178,7 +186,7 @@
               <td>4K</td>
             </tr>
             <tr>
-              <th>Max Videos per Run</th>
+              <th>Max Video Tasks per Batch (Continuous)</th>
               <td>12</td>
               <td>27</td>
               <td>54</td>
@@ -186,7 +194,7 @@
               <td>100 (practically unlimited)</td>
             </tr>
             <tr>
-              <th>Max Continuous Images per Run</th>
+              <th>Max Continuous Image Tasks per Batch</th>
               <td>25</td>
               <td>50</td>
               <td>100</td>
@@ -212,7 +220,8 @@
           </tbody>
         </table>
       </div>
-      <p class="lead" style="margin-top: 10px;">Note: The USD 79.99 tier is designed for high-intensity production and final limits are configured by real usage needs.</p>
+      <p class="lead pricing-note">Definition: "Max download video/image resolution" means the highest quality available for export. "Max video tasks per batch" means how many video generation tasks can run continuously in one execution.</p>
+      <p class="lead pricing-note">Note: The USD 79.99 tier is designed for high-intensity production and final limits are configured by real usage needs.</p>
     </section>
 
     <section id="policy" class="card section">
