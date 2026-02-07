@@ -8,6 +8,6 @@
   location: "Remote",
   refundWindowDays: 7,
   currency: "USD",
-  basePrice: "19",
+  basePrice: "0",
   updatedAt: "2026-02-07"
 };
