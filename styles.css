@@ -474,6 +474,46 @@ main > section:nth-of-type(7) {
   background: rgba(255, 255, 255, 0.82);
 }
 
+.range-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.range-card {
+  border: 1px solid rgba(15, 37, 26, 0.16);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(247, 250, 246, 0.84));
+  padding: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+.range-card h3 {
+  font-family: 'Syne', 'Noto Sans SC', sans-serif;
+  font-size: 1rem;
+  margin: 0 0 5px;
+}
+
+.range-card .range-price {
+  font-family: 'Syne', 'Noto Sans SC', sans-serif;
+  font-weight: 700;
+  font-size: 1.18rem;
+  margin: 0 0 7px;
+}
+
+.range-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.62;
+}
+
+.range-card.recommended {
+  border-color: rgba(15, 125, 102, 0.46);
+  box-shadow: 0 10px 24px rgba(15, 125, 102, 0.17);
+}
+
 .compare-table {
   width: 100%;
   min-width: 980px;
@@ -647,7 +687,8 @@ footer {
   .grid-3,
   .price-grid,
   .link-grid,
-  .gallery {
+  .gallery,
+  .range-grid {
     grid-template-columns: 1fr;
   }
 
