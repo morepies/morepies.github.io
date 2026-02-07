@@ -427,11 +427,20 @@ main > section:nth-of-type(7) {
   gap: 14px;
 }
 
+.gallery-single {
+  grid-template-columns: 1fr;
+}
+
 .shot {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 14px;
   background: #fff;
+}
+
+.shot-link {
+  display: block;
+  cursor: zoom-in;
 }
 
 .shot img {
