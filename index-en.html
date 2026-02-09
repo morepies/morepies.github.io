@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Flow Plugin Service | morepies</title>
-  <meta name="description" content="Flow plugin and automation service showcase page for PayPal store URL submission." />
+  <meta name="description" content="Flow plugin and automation service showcase page for store URL and product page submission." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,6 +15,7 @@
         <nav class="menu">
           <a href="#product">Product</a>
           <a href="#features">Features</a>
+          <a href="#guide">Guide</a>
           <a href="#pricing">Pricing</a>
           <a href="#policy">Policy</a>
           <a href="#contact">Contact</a>
@@ -35,13 +36,13 @@
         <p class="lead">
           This site showcases the features, service model, and after-sales policy of
           <span data-config="productName">Flow Input Panel</span>.
-          It can be used as a store/product URL for PayPal application review.
+          It can be used as a store/product URL for platform application review.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" data-config-mailto="contactEmail" href="mailto:morepiesai@gmail.com">Contact / Purchase</a>
           <a class="btn btn-secondary" data-config-href="githubProfile" href="https://github.com/morepies" target="_blank" rel="noreferrer">GitHub</a>
         </div>
-        <p id="setup-banner" class="notice">Please update `contactEmail` in `config.js` before submitting to PayPal.</p>
+        <p id="setup-banner" class="notice">Please update `contactEmail` in `config.js` before submitting your review materials.</p>
       </article>
 
       <aside class="card hero-side">
@@ -55,7 +56,7 @@
         </div>
         <div class="stat">
           <strong>Starting Price</strong>
-          <span><span data-config="currency">USD</span> <span data-config="basePrice">0</span>+</span>
+          <span>Free Trial + Paid starts at <span data-config="currency">USD</span> <span data-config="basePrice">9.99</span></span>
         </div>
         <div class="stat">
           <strong>Last Updated</strong>
@@ -114,16 +115,65 @@
     <section class="card section">
       <div class="section-head">
         <h2>UI Showcase</h2>
-        <p>Real Flow runtime screenshot (2026-02-07)</p>
+        <p>Real Flow runtime and output example (2026-02-07)</p>
       </div>
-      <div class="gallery gallery-single">
+      <div class="gallery">
         <figure class="shot">
           <a class="shot-link" href="assets/flow-latest-ui.png" target="_blank" rel="noreferrer">
             <img src="assets/flow-latest-ui.png" alt="Flow plugin and Flow page integrated interface" />
           </a>
           <figcaption>Flow plugin operation panel and login status in a real generation session. Click image to view full size.</figcaption>
         </figure>
+        <figure class="shot">
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/THM6jmvnTSE"
+              title="Flow tool real output video demo"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <figcaption>
+            Real video result generated with the Flow tool. If inline playback is blocked, open it on
+            <a href="https://youtu.be/THM6jmvnTSE?si=1S5eyx0KbuhvtBTy" target="_blank" rel="noreferrer">YouTube</a>.
+          </figcaption>
+        </figure>
       </div>
+    </section>
+
+    <section id="guide" class="card section">
+      <div class="section-head">
+        <h2>Quick User Guide</h2>
+        <p>5-minute onboarding flow (for users and reviewers)</p>
+      </div>
+      <div class="grid-3">
+        <article class="feature">
+          <h3>1. Install & Sign In</h3>
+          <p>Install the extension, set backend URL, then use Google login and token verification before running tasks.</p>
+        </article>
+        <article class="feature">
+          <h3>2. Prepare Assets</h3>
+          <p>Add source assets (images/videos), confirm assets are loaded, then run script parsing.</p>
+        </article>
+        <article class="feature">
+          <h3>3. Parse Script</h3>
+          <p>Use Parse to split script into shots; verify shot count, duration, and asset bindings.</p>
+        </article>
+        <article class="feature">
+          <h3>4. Set Parameters</h3>
+          <p>Choose aspect ratio, output count, and download mode; image mode can use first-frame confirmation.</p>
+        </article>
+        <article class="feature">
+          <h3>5. Run Automation</h3>
+          <p>Click Start to run generation and download workflow; use logs to quickly locate failed steps.</p>
+        </article>
+        <article class="feature">
+          <h3>6. Verify Outputs</h3>
+          <p>Check naming, quality, and quantity after completion; re-run failed shots when needed.</p>
+        </article>
+      </div>
+      <p class="lead pricing-note">Note: This guide describes Flow plugin automation workflow, not the native quota or rights of the underlying model platform.</p>
     </section>
 
     <section id="pricing" class="card section">
@@ -133,19 +183,19 @@
       </div>
       <div class="range-grid">
         <article class="range-card">
-          <h3>Range A: Trial</h3>
+          <h3>Tier A: Free</h3>
           <p class="range-price">USD 0</p>
           <p>For new users and low-intensity use. 720p video, 1K image baseline.</p>
         </article>
         <article class="range-card recommended">
-          <h3>Range B: Main Creator</h3>
+          <h3>Tier B: Standard / Pro</h3>
           <p class="range-price">USD 9.99 - 19.99</p>
-          <p>From 1080p to 4K with higher batch limits. Best for daily production.</p>
+          <p>Main efficiency tier: 1080p video and 2K image export for steady daily production.</p>
         </article>
         <article class="range-card">
-          <h3>Range C: High Frequency</h3>
+          <h3>Tier C: Premier / Team</h3>
           <p class="range-price">USD 39.99 - 79.99</p>
-          <p>For heavy workloads with stronger 4K capacity and larger task volume.</p>
+          <p>For heavy workloads with priority queue, steadier concurrency, and faster support response.</p>
         </article>
       </div>
       <div class="compare-table-wrap">
@@ -162,10 +212,10 @@
             <tr>
               <th>Metric</th>
               <th>Free</th>
-              <th>USD 9.99</th>
-              <th>USD 19.99</th>
-              <th>USD 39.99</th>
-              <th>USD 79.99</th>
+              <th>Standard (USD 9.99)</th>
+              <th>Pro (USD 19.99)</th>
+              <th>Premier (USD 39.99)</th>
+              <th>Team (USD 79.99)</th>
             </tr>
           </thead>
           <tbody>
@@ -173,7 +223,7 @@
               <th>Max Download Video Resolution</th>
               <td>720p</td>
               <td>1080p</td>
-              <td>4K</td>
+              <td>1080p</td>
               <td>4K</td>
               <td>4K</td>
             </tr>
@@ -181,7 +231,7 @@
               <th>Max Download Image Resolution</th>
               <td>Min 1K</td>
               <td>2K</td>
-              <td>4K</td>
+              <td>2K</td>
               <td>4K</td>
               <td>4K</td>
             </tr>
@@ -191,7 +241,7 @@
               <td>27</td>
               <td>54</td>
               <td>64</td>
-              <td>100 (practically unlimited)</td>
+              <td>100 (single-run cap; daily cap expands dynamically by account tier)</td>
             </tr>
             <tr>
               <th>Max Continuous Image Tasks per Batch</th>
@@ -199,7 +249,7 @@
               <td>50</td>
               <td>100</td>
               <td>100</td>
-              <td>100 (practically unlimited)</td>
+              <td>100 (single-run cap; daily cap expands dynamically by account tier)</td>
             </tr>
             <tr>
               <th>Script Mode Daily Limit</th>
@@ -207,27 +257,36 @@
               <td>7/day</td>
               <td>14/day</td>
               <td>30/day</td>
-              <td>Open for heavy usage</td>
+              <td>Dynamically expanded by account tier (priority for high-frequency usage)</td>
+            </tr>
+            <tr>
+              <th>Concurrent Online Devices</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>2</td>
             </tr>
             <tr>
               <th>Extra Benefit</th>
               <td>Core trial experience</td>
               <td>Full HD workflow</td>
               <td>Includes auto-cut helper tool</td>
-              <td>High-frequency creator tier</td>
-              <td>Flagship tier</td>
+              <td>Priority queue + steadier concurrency + faster support response</td>
+              <td>Team/high-frequency professional tier (includes dedicated support)</td>
             </tr>
           </tbody>
         </table>
       </div>
       <p class="lead pricing-note">Definition: "Max download video/image resolution" means the highest quality available for export. "Max video tasks per batch" means how many video generation tasks can run continuously in one execution.</p>
-      <p class="lead pricing-note">Note: The USD 79.99 tier is designed for high-intensity production and final limits are configured by real usage needs.</p>
+      <p class="lead pricing-note">Note: The USD 79.99 tier uses a "100 per run + dynamically expanded daily cap by account tier" rule.</p>
+      <p class="lead pricing-note">Clarification: These limits describe Flow plugin automation capacity, not the native quota of the underlying model platform.</p>
     </section>
 
     <section id="policy" class="card section">
       <div class="section-head">
         <h2>Policy & Compliance</h2>
-        <p>These pages are usually reviewed in PayPal submissions</p>
+        <p>Service policy and support pages</p>
       </div>
       <div class="link-grid">
         <a class="link-item" href="privacy-en.html">
@@ -252,7 +311,7 @@
     <section id="contact" class="card section">
       <div class="section-head">
         <h2>Contact Info</h2>
-        <p>Please ensure this info is valid before PayPal submission</p>
+        <p>Business and technical support contacts</p>
       </div>
       <div class="grid-3">
         <article class="feature">
@@ -264,8 +323,8 @@
           <p><a data-config-mailto="contactEmail" href="mailto:morepiesai@gmail.com" data-config="contactEmail">morepiesai@gmail.com</a></p>
         </article>
         <article class="feature">
-          <h3>Public Profile</h3>
-          <p><a data-config-href="supportUrl" href="https://github.com/morepies" target="_blank" rel="noreferrer">GitHub / Support Entry</a></p>
+          <h3>GitHub</h3>
+          <p><a data-config-href="supportUrl" data-config="supportUrl" href="https://github.com/morepies" target="_blank" rel="noreferrer">https://github.com/morepies</a></p>
         </article>
       </div>
     </section>

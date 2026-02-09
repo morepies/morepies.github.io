@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Flow 插件服务 | morepies</title>
-  <meta name="description" content="Flow 插件与自动化服务展示页，可用于 PayPal 店铺链接提交。" />
+  <meta name="description" content="Flow 插件与自动化服务展示页，可用于店铺链接与产品展示提交。" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,6 +15,7 @@
         <nav class="menu">
           <a href="#product">产品</a>
           <a href="#features">功能</a>
+          <a href="#guide">说明</a>
           <a href="#pricing">价格</a>
           <a href="#policy">政策</a>
           <a href="#contact">联系</a>
@@ -34,13 +35,13 @@
         <h1>Flow 自动化插件展示与技术服务</h1>
         <p class="lead">
           本站用于展示 <span data-config="productName">Flow Input Panel</span> 的功能、服务方式与售后政策。
-          可作为 PayPal 申请中的“店铺链接 / 产品展示链接”提交。
+          可作为平台申请中的“店铺链接 / 产品展示链接”提交。
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" data-config-mailto="contactEmail" href="mailto:morepiesai@gmail.com">联系购买 / 咨询</a>
           <a class="btn btn-secondary" data-config-href="githubProfile" href="https://github.com/morepies" target="_blank" rel="noreferrer">GitHub 主页</a>
         </div>
-        <p id="setup-banner" class="notice">请先在 `config.js` 里把 `contactEmail` 改成你的真实邮箱，然后再提交 PayPal。</p>
+        <p id="setup-banner" class="notice">请先在 `config.js` 里把 `contactEmail` 改成你的真实邮箱，再提交审核资料。</p>
       </article>
 
       <aside class="card hero-side">
@@ -54,7 +55,7 @@
         </div>
         <div class="stat">
           <strong>价格起点</strong>
-          <span><span data-config="currency">USD</span> <span data-config="basePrice">0</span> 起</span>
+          <span>免费试用 + 付费档起步 <span data-config="currency">USD</span> <span data-config="basePrice">9.99</span></span>
         </div>
         <div class="stat">
           <strong>最后更新</strong>
@@ -113,16 +114,65 @@
     <section class="card section">
       <div class="section-head">
         <h2>界面展示</h2>
-        <p>Flow 实际运行界面（2026-02-07）</p>
+        <p>Flow 实际运行界面与产出示例（2026-02-07）</p>
       </div>
-      <div class="gallery gallery-single">
+      <div class="gallery">
         <figure class="shot">
           <a class="shot-link" href="assets/flow-latest-ui.png" target="_blank" rel="noreferrer">
             <img src="assets/flow-latest-ui.png" alt="Flow 插件与 Flow 页面联动界面" />
           </a>
           <figcaption>Flow 插件在实际生成页面中的操作与登录状态展示。点击图片可查看原图。</figcaption>
         </figure>
+        <figure class="shot">
+          <div class="video-wrap">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/THM6jmvnTSE"
+              title="Flow 工具实战产出视频演示"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <figcaption>
+            通过 Flow 工具实际完成的视频示例。若站内无法播放，可
+            <a href="https://youtu.be/THM6jmvnTSE?si=1S5eyx0KbuhvtBTy" target="_blank" rel="noreferrer">在 YouTube 打开</a>。
+          </figcaption>
+        </figure>
       </div>
+    </section>
+
+    <section id="guide" class="card section">
+      <div class="section-head">
+        <h2>简单使用说明</h2>
+        <p>5 分钟快速上手（给新用户与平台审核查看）</p>
+      </div>
+      <div class="grid-3">
+        <article class="feature">
+          <h3>1. 安装与登录</h3>
+          <p>安装插件后，先填写后端地址并点击 Google 登录，令牌验证通过后再开始任务。</p>
+        </article>
+        <article class="feature">
+          <h3>2. 准备资产</h3>
+          <p>在资产区添加素材（图片/视频），确认资产已加载后再执行脚本解析。</p>
+        </article>
+        <article class="feature">
+          <h3>3. 解析脚本</h3>
+          <p>点击“解析”将剧本拆分为镜头列表，检查镜头数量、时长与引用素材是否正确。</p>
+        </article>
+        <article class="feature">
+          <h3>4. 设置参数</h3>
+          <p>选择画幅比例、输出数与下载模式；图片模式可选首帧确认与来源策略。</p>
+        </article>
+        <article class="feature">
+          <h3>5. 一键执行</h3>
+          <p>点击“开始”后插件将自动执行、下载并记录日志；异常可在日志区快速定位。</p>
+        </article>
+        <article class="feature">
+          <h3>6. 结果复核</h3>
+          <p>生成完成后检查文件命名、清晰度和数量，必要时续跑失败镜头补齐结果。</p>
+        </article>
+      </div>
+      <p class="lead pricing-note">提示：以上流程描述的是 Flow 插件自动化操作步骤，不包含模型平台本身的账号权益与额度规则。</p>
     </section>
 
     <section id="pricing" class="card section">
@@ -132,19 +182,19 @@
       </div>
       <div class="range-grid">
         <article class="range-card">
-          <h3>区间 A：体验入门</h3>
+          <h3>档位 A：Free</h3>
           <p class="range-price">USD 0</p>
           <p>适合新用户试用。720p 视频、1K 图片，轻量任务与基础熟悉流程。</p>
         </article>
         <article class="range-card recommended">
-          <h3>区间 B：主力创作</h3>
+          <h3>档位 B：Standard / Pro</h3>
           <p class="range-price">USD 9.99 - 19.99</p>
-          <p>从 1080p 到 4K，视频/图片上限明显提升。适合日常稳定出片。</p>
+          <p>主力效率档：1080p 视频与 2K 图片，适合稳定日常出片。</p>
         </article>
         <article class="range-card">
-          <h3>区间 C：高频生产</h3>
+          <h3>档位 C：Premier / Team</h3>
           <p class="range-price">USD 39.99 - 79.99</p>
-          <p>高并发高频创作场景，重点保障 4K 与更高任务容量。</p>
+          <p>高并发高频创作场景，提供优先队列、更稳并发与更快支持响应。</p>
         </article>
       </div>
       <div class="compare-table-wrap">
@@ -161,10 +211,10 @@
             <tr>
               <th>对比项</th>
               <th>免费体验</th>
-              <th>USD 9.99</th>
-              <th>USD 19.99</th>
-              <th>USD 39.99</th>
-              <th>USD 79.99</th>
+              <th>Standard（USD 9.99）</th>
+              <th>Pro（USD 19.99）</th>
+              <th>Premier（USD 39.99）</th>
+              <th>Team（USD 79.99）</th>
             </tr>
           </thead>
           <tbody>
@@ -172,7 +222,7 @@
               <th>视频下载最大清晰度</th>
               <td>720p</td>
               <td>1080p</td>
-              <td>4K</td>
+              <td>1080p</td>
               <td>4K</td>
               <td>4K</td>
             </tr>
@@ -180,7 +230,7 @@
               <th>图片下载最大清晰度</th>
               <td>最低 1K 像素</td>
               <td>2K</td>
-              <td>4K</td>
+              <td>2K</td>
               <td>4K</td>
               <td>4K</td>
             </tr>
@@ -190,7 +240,7 @@
               <td>27</td>
               <td>54</td>
               <td>64</td>
-              <td>100（基本不限）</td>
+              <td>100（单次上限；日上限按账号等级动态放宽）</td>
             </tr>
             <tr>
               <th>单次连续图片任务上限</th>
@@ -198,7 +248,7 @@
               <td>50</td>
               <td>100</td>
               <td>100</td>
-              <td>100（基本不限）</td>
+              <td>100（单次上限；日上限按账号等级动态放宽）</td>
             </tr>
             <tr>
               <th>剧本模式（每天）</th>
@@ -206,27 +256,36 @@
               <td>7 次</td>
               <td>14 次</td>
               <td>30 次</td>
-              <td>按高强度使用开放</td>
+              <td>按账号等级动态放宽（高频优先）</td>
+            </tr>
+            <tr>
+              <th>同时在线设备数</th>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>2</td>
             </tr>
             <tr>
               <th>额外权益</th>
               <td>基础体验</td>
               <td>高清下载能力</td>
               <td>赠送自动截取工具</td>
-              <td>高频创作档</td>
-              <td>旗舰档位</td>
+              <td>优先队列 + 更稳并发 + 更快支持响应</td>
+              <td>团队/高频专业档（含专属支持）</td>
             </tr>
           </tbody>
         </table>
       </div>
       <p class="lead pricing-note">定义：视频/图片“下载最大清晰度”是成品可下载的最高分辨率；“单次视频任务上限”是一轮中可连续执行的视频生成任务数量。</p>
-      <p class="lead pricing-note">补充：USD 79.99 档用于高频创作，具体上限会按实际使用场景配置。</p>
+      <p class="lead pricing-note">补充：USD 79.99 档采用“单次 100，日上限按账号等级动态放宽”的规则。</p>
+      <p class="lead pricing-note">说明：以上上限为 Flow 插件自动化能力上限，不等同于模型平台原生额度（以平台规则为准）。</p>
     </section>
 
     <section id="policy" class="card section">
       <div class="section-head">
         <h2>政策与合规</h2>
-        <p>PayPal 审核通常会查看这些页面</p>
+        <p>服务政策与支持说明</p>
       </div>
       <div class="link-grid">
         <a class="link-item" href="privacy.html">
@@ -251,7 +310,7 @@
     <section id="contact" class="card section">
       <div class="section-head">
         <h2>联系信息</h2>
-        <p>提交 PayPal 前请确认此处信息真实可联系</p>
+        <p>商务合作与技术支持联系方式</p>
       </div>
       <div class="grid-3">
         <article class="feature">
@@ -263,8 +322,8 @@
           <p><a data-config-mailto="contactEmail" href="mailto:morepiesai@gmail.com" data-config="contactEmail">morepiesai@gmail.com</a></p>
         </article>
         <article class="feature">
-          <h3>公开主页</h3>
-          <p><a data-config-href="supportUrl" href="https://github.com/morepies" target="_blank" rel="noreferrer">GitHub / 技术支持入口</a></p>
+          <h3>GitHub</h3>
+          <p><a data-config-href="supportUrl" data-config="supportUrl" href="https://github.com/morepies" target="_blank" rel="noreferrer">https://github.com/morepies</a></p>
         </article>
       </div>
     </section>
